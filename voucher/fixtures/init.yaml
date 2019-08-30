@@ -1,0 +1,5 @@
+- model: voucher.Voucher
+  pk: 1
+  fields:
+    code: SNSD
+    created: 2019-07-18

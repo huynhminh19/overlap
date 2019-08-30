@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    entrypoint: docker-entrypoint.test.sh
+    volumes:
+      - .:/code
+    depends_on:
+      - db
